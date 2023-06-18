@@ -6,12 +6,16 @@ html,
 }
 
 body {
-  background: linear-gradient(90deg, #FED9B7, #0081A7)
+  background: linear-gradient(90deg, #FED9B7, #0081A7);
+  background: linear-gradient(90deg, #EAEDF3, #708F96c9);
 }
+
+/* TÍTULO */
 
 .title {
   text-align: center;
-  font-family: 'Pacifico', cursive;
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Dancing Script', cursive;
   font-size: 2em;
   animation: efectoTexto;
   animation-duration: 4s;
@@ -26,6 +30,15 @@ body {
   75%{color: #98ccff; text-shadow: 2px 2px 5px #333;}
   100%{color: aliceblue; text-shadow: 1px 1px 3px #333;}
 }
+
+.text {
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  right: 42%;
+}
+
+/* Tarjetas */
 
 .cards {
   display: flex;
@@ -46,19 +59,12 @@ body {
 }
 
 .card__show {
-  height: 250px;
-  width: 250px;
+  height: 230px;
+  width: 270px;
   border-radius: 5%;
   box-shadow: 1px 1px 3px 1px #333;
   position: relative;
   z-index: 50;
-}
-
-.text {
-  font-weight: bold;
-  font-style: italic;
-  position: absolute;
-  right: 42%;
 }
 
 .group__card1 > .display, .group__card3 > .display {
@@ -98,10 +104,12 @@ body {
 }
 
 .card__hidden1, .card__hidden2, .card__hidden3 {
-  font-family: 'Pacifico', cursive;
+  background-color: #E0D8CC;
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Dancing Script', cursive;
   font-size: 1.5em;
-  height: 250px;
-  width: 250px;
+  height: 230px;
+  width: 270px;
   border-radius: 5%;
   box-shadow: 1px 1px 3px 1px #333;
   position: relative;
