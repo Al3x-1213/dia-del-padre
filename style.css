@@ -1,0 +1,94 @@
+html, 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #FED9B7, #0081A7)
+}
+
+.title {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 2em;
+  animation: efectoTexto;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes efectoTexto {
+  0%{color: aliceblue; text-shadow: 1px 1px 3px #333;}
+  25%{color: #98ccff; text-shadow: 2px 2px 5px #333;}
+  50%{color: #48a3ff; text-shadow: 3px 3px 7px #333;}
+  75%{color: #98ccff; text-shadow: 2px 2px 5px #333;}
+  100%{color: aliceblue; text-shadow: 1px 1px 3px #333;}
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 5%;
+}
+
+.group__card1, .group__card2, .group__card3 {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  margin: 2.5% auto 0;
+}
+
+.group__card1, .group__card3 {
+  flex-direction: row-reverse;
+}
+
+.card__show {
+  height: 250px;
+  width: 250px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px 1px #333;
+  position: relative;
+  z-index: 50;
+}
+
+.text {
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  right: 42%;
+}
+
+.group__card1 > .display, .group__card3 > .display {
+  display: none;
+  position: relative; 
+  left: 390px;
+  transition: .6s all ease;
+}
+
+.group__card2 > .display {
+  display: none;
+  position: relative; 
+  right: 390px;
+  transition: .6s all ease;
+}
+
+.card__hidden {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  height: 250px;
+  width: 250px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px 1px #333;
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
