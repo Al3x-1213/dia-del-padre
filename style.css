@@ -31,7 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 5%;
+  margin: 5% 0 10%;
 }
 
 .group__card1, .group__card2, .group__card3 {
@@ -65,6 +65,17 @@ body {
   display: none;
   position: relative; 
   left: 390px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  height: 250px;
+  width: 250px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px 1px #333;
+  z-index: 10;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
   transition: .6s all ease;
 }
 
@@ -72,10 +83,21 @@ body {
   display: none;
   position: relative; 
   right: 390px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  height: 250px;
+  width: 250px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px 1px #333;
+  z-index: 10;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
   transition: .6s all ease;
 }
 
-.card__hidden {
+.card__hidden1, .card__hidden2, .card__hidden3 {
   font-family: 'Pacifico', cursive;
   font-size: 1.5em;
   height: 250px;
@@ -91,4 +113,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .6s all ease;
 }
