@@ -6,17 +6,15 @@ html,
 }
 
 body {
-  background: linear-gradient(90deg, #FED9B7, #0081A7);
-  background: linear-gradient(90deg, #EAEDF3, #708F96c9);
+  background: linear-gradient(90deg, #FED9B7, #0080a7cb);
+  /* background: linear-gradient(90deg, #EAEDF3, #708F96c9); */
 }
-
-/* TÍTULO */
 
 .title {
   text-align: center;
   /* font-family: 'Pacifico', cursive; */
   font-family: 'Dancing Script', cursive;
-  font-size: 2em;
+  font-size: 4em;
   animation: efectoTexto;
   animation-duration: 4s;
   animation-iteration-count: infinite;
@@ -31,20 +29,11 @@ body {
   100%{color: aliceblue; text-shadow: 1px 1px 3px #333;}
 }
 
-.text {
-  font-weight: bold;
-  font-style: italic;
-  position: absolute;
-  right: 42%;
-}
-
-/* Tarjetas */
-
 .cards {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top: 5%;
+  margin: 5% 0 10%;
 }
 
 .group__card1, .group__card2, .group__card3 {
@@ -59,18 +48,36 @@ body {
 }
 
 .card__show {
-  height: 230px;
-  width: 270px;
+  height: 300px;
+  width: 300px;
   border-radius: 5%;
   box-shadow: 1px 1px 3px 1px #333;
   position: relative;
   z-index: 50;
 }
 
+.text {
+  font-weight: bold;
+  font-style: italic;
+  position: absolute;
+  right: 42%;
+}
+
 .group__card1 > .display, .group__card3 > .display {
   display: none;
   position: relative; 
   left: 390px;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5em;
+  height: 300px;
+  width: 300px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px 1px #333;
+  z-index: 10;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
   transition: .6s all ease;
 }
 
@@ -78,16 +85,29 @@ body {
   display: none;
   position: relative; 
   right: 390px;
-  transition: .6s all ease;
-}
-
-.card__hidden {
-  background-color: #E0D8CC;
   /* font-family: 'Pacifico', cursive; */
   font-family: 'Dancing Script', cursive;
   font-size: 1.5em;
-  height: 230px;
-  width: 270px;
+  height: 300px;
+  width: 300px;
+  border-radius: 5%;
+  box-shadow: 1px 1px 3px 1px #333;
+  z-index: 10;
+  padding: 10px;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  transition: .6s all ease;
+}
+
+.card__hidden1, .card__hidden2, .card__hidden3 {
+  background-color: #E0D8CC;
+  background-color: #d1b188;
+  /* font-family: 'Pacifico', cursive; */
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  height: 300px;
+  width: 300px;
   border-radius: 5%;
   box-shadow: 1px 1px 3px 1px #333;
   position: relative;
@@ -99,4 +119,5 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: .6s all ease;
 }
